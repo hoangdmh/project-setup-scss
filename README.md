@@ -1,2 +1,2 @@
 # project-setup-scss
-project-setup-scss
+* config scss folder
