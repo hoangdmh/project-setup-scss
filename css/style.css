@@ -76,6 +76,72 @@ button:focus, input:focus, a:focus {
 ------------------------------------*/
 /*  Index page
 ------------------------------------*/
+#warraper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .header .navbar {
+    margin-left: auto; }
+
+.navbar__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .navbar__nav__item {
+    margin-left: 20px; }
+    .navbar__nav__item .navbar_nav__link {
+      font-size: 16px; }
+    .navbar__nav__item.active .navbar_nav__link {
+      color: #0b7cc4;
+      font-weight: bold; }
+
+.hamburger {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .hamburger span {
+    width: 100%;
+    height: 2px;
+    background-color: #333; }
+  .hamburger.show__menu span {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .hamburger.show__menu span:nth-child(1) {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      margin-top: 17px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .hamburger.show__menu span:nth-child(2) {
+      opacity: 0; }
+    .hamburger.show__menu span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      margin-bottom: 16px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+
 /*  Footer
 ------------------------------------*/
 /*======================================
@@ -109,5 +175,5 @@ button:focus, input:focus, a:focus {
   border: 0; }
 
 /*-----------------------
-        Responsive for device < 767px
+    Responsive for device < 767px
 -----------------------------------------*/

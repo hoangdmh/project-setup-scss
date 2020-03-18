@@ -1,2 +1,58 @@
 /*  Index page
 ------------------------------------*/
+#warraper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header {
+	display: flex;
+	align-items: center;
+	.navbar {
+		margin-left: auto;
+	}
+}
+.navbar__nav {
+	display: flex;
+	&__item {
+		margin-left: 20px;
+		.navbar_nav__link {
+			font-size: 16px;
+		}
+		&.active {
+			.navbar_nav__link {
+				color: #0b7cc4;
+				font-weight: bold;
+			}
+		}
+	}
+}
+.hamburger {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+	span {
+		width: 100%;
+		height: 2px;
+		background-color: #333;
+	}
+	&.show__menu {
+		span {
+			transition: all 0.5s;
+			&:nth-child(1) {
+				transform: rotate(45deg);
+				margin-top: 17px;
+				transition: all 0.5s;
+			} 
+			&:nth-child(2) {
+				opacity: 0;
+			} 
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+    			margin-bottom: 16px;
+    			transition: all 0.5s;
+			} 
+		}
+	}
+}
